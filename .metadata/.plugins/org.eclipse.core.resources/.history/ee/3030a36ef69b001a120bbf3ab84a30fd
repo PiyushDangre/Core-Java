@@ -1,0 +1,26 @@
+package app;
+
+class MyClass {
+	
+	public Object obj ;
+	
+	public Object getObj() {
+		return this.obj;
+	}
+	
+	public void setObj(Object o) {
+		this.obj = o ;
+	}
+	
+}
+
+public class myApp {
+
+	public static void main(String args[]) {
+		MyClass m = new MyClass();
+		m.setObj("Hello world");
+		System.out.println(m.getObj());
+		
+	}
+	
+}

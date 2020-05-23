@@ -1,0 +1,28 @@
+package app;
+
+import java.util.* ;
+
+class Vegetable {
+	
+	String taste ;
+	
+	public void setTaste(String taste) {
+		this.taste = taste ;
+	}
+	
+	public String getTaste() {
+		return this.taste;
+	}
+	
+	public String toString() {
+		return this.taste ;
+	}
+}
+
+class Potato extends Vegetable {}
+
+class Tomato extends Vegetable {}
+
+public class Generics {
+	
+}

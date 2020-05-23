@@ -1,0 +1,21 @@
+package app;
+
+public class Application {
+	
+	public static void add(int k, int b) {
+		System.out.println(k+b);
+	}
+	
+	public static void add(double k, double b) {
+		System.out.println("float"+(k+b));
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		add(5.0,6.0);
+		
+		
+
+	}
+
+}

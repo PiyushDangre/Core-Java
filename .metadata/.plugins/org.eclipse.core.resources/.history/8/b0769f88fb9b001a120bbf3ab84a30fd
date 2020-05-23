@@ -1,0 +1,26 @@
+package app;
+
+class MyClass<T> {
+	
+	public T obj ;
+	
+	public T getObj() {
+		return this.obj;
+	}
+	
+	public void setObj(T o) {
+		this.obj = o ;
+	}
+	
+}
+
+public class myApp {
+
+	public static void main(String args[]) {
+		MyClass<Integer> m = new MyClass<>();
+		m.setObj(45);
+		Integer i =  m.getObj() ;
+		System.out.println(i);
+	}
+	
+}

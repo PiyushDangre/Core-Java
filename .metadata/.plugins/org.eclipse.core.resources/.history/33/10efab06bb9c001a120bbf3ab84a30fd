@@ -1,0 +1,28 @@
+package app;
+
+import java.util.* ;
+
+class Fruit {
+	
+	String taste ;
+	
+	public void setTaste(String taste) {
+		this.taste = taste ;
+	}
+	
+	public String getTaste() {
+		return this.taste;
+	}
+	
+	public String toString() {
+		return this.taste ;
+	}
+}
+
+class Apple extends Fruit {}
+
+class Mango extends Fruit {}
+
+public class Generics {
+	
+}

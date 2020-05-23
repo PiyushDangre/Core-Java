@@ -1,0 +1,21 @@
+package app;
+
+public class GenClass {
+
+	// We are defining a generic method here.
+	
+	public <T> void genericMethod1(T t) {
+		System.out.println(t);
+	}
+	
+	public <T> T genericMethod2(T t) {
+		return t ;
+	}
+	
+	public <T> void showArray(T[] t) {
+		
+		for(T item : t) {
+			System.out.println(item + "-->");
+		}
+	}
+}

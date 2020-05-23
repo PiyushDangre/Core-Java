@@ -1,0 +1,20 @@
+package app;
+
+class myClass {
+	
+	public Object obj ;
+	
+	public Object getObj() {
+		return this.obj;
+	}
+	
+	public void setObj(Object o) {
+		this.obj = o ;
+	}
+	
+}
+
+public class myApp {
+
+	
+}

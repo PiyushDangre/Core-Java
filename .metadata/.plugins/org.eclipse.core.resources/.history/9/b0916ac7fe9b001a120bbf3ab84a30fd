@@ -1,0 +1,50 @@
+package app;
+
+class MyClass<T> {
+	
+	public T obj ;
+	
+	public T getObj() {
+		return this.obj;
+	}
+	
+	public void setObj(T o) {
+		this.obj = o ;
+	}
+	
+}
+
+class HashTable<K,V> {
+	
+	public K key ;
+	public V value;
+	
+	public HashTable(K key, V val) {
+		this.key = key ;
+		this.value = val ;
+	}
+
+	@Override
+	public String toString() {
+		return "HashTable [key=" + key + ", value=" + value + "]";
+	}
+	
+	
+}
+
+public class myApp {
+
+	public static void main(String args[]) {
+		GenClass gn = new GenClass();
+		
+		// Make call to generic methods
+		gn.genericMethod1("Some String");
+		System.out.println(gn.genericMethod2(8888));
+		
+		String[] stringArray = {"Piyush", "Mangesh", "Dangre"};
+		Integer[] intArray = {1,2,3,4,5} ;
+		gn.showArray(stringArray);
+		
+	}
+	
+}

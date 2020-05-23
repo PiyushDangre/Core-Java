@@ -1,0 +1,36 @@
+package app;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class Application {
+	
+	public static void main(String[] args) {
+		Collection<Fruit> fruits = new ArrayList<>();
+		fruits.add(new Mango());
+		fruits.add(new Apple());	
+		Application.eat(fruits);
+	}
+	
+	public static void eat(Collection<? extends Fruit> fruits) {		
+		for(Fruit frut : fruits) {
+			System.out.println(frut);
+		}		
+		
+		/*
+		 * fruits.add(new Fruit()); fruits.add(new Apple());
+		 */
+	}
+}
+
+class Fruit {
+	String taste;	
+	Fruit(){}	
+    Fruit(String taste){
+		this.taste = taste;
+	}
+}
+
+class Apple extends Fruit {	}
+
+class Mango extends Fruit {	}

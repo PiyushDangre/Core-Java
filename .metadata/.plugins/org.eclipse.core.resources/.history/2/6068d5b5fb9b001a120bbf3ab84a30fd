@@ -1,0 +1,42 @@
+package app;
+
+class MyClass<T> {
+	
+	public T obj ;
+	
+	public T getObj() {
+		return this.obj;
+	}
+	
+	public void setObj(T o) {
+		this.obj = o ;
+	}
+	
+}
+
+class HashTable<K,V> {
+	
+	public K key ;
+	public V value;
+	
+	public HashTable(K key, V val) {
+		this.key = key ;
+		this.value = val ;
+	}
+
+	@Override
+	public String toString() {
+		return "HashTable [key=" + key + ", value=" + value + "]";
+	}
+	
+	
+}
+
+public class myApp {
+
+	public static void main(String args[]) {
+		HashTable<Integer, String> ht = new HashTable<>(1, "Damn this world");
+		ht.toString();
+	}
+	
+}
